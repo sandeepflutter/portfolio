@@ -6,7 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
 
-function About({ title, name, social: { github, facebook, twitter, email }, desc }) {
+function About({ title, name, social: { github, facebook, twitter, email }, about:{who, description} }) {
   return (
     <div className="max-w-4xl mx-auto mt-16">
     <div className="w-full">
@@ -58,9 +58,9 @@ function About({ title, name, social: { github, facebook, twitter, email }, desc
         </div>
       </div>
     </div>
-    <p className="text-2xl md:text-4xl font-bold text-center">{title}</p>
+    <p className="text-2xl md:text-4xl font-bold text-center">{who}</p>
       <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4">
-        {desc}
+        {description}
       </p>
     </div>
   );
