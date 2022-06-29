@@ -3,8 +3,9 @@ import { FaPalette, FaReact, FaCode } from "react-icons/fa";
 
 const BOOTSTRAP_FOR_SKILL_ICON = "text-4xl mx-auto inline-block";
 const data = {
+  intro:"Hello, I’m",
   name: "Sandeep Budha",
-  title: "Developer/Designer",
+  title: "👨‍💻 Developer + Designer",
   social: {
     github: "https://github.com/sandeepflutter",
     facebook: "https://www.facebook.com/profile.php?id=100011911954302",
@@ -12,9 +13,9 @@ const data = {
     email: "sandeepbudha.sb@gmail.com",
   },
   about: {
-    who: "My Background",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper porta pharetra. Nunc porta dui eu mattis laoreet. Quisque lobortis orci sagittis, luctus ligula nec, sagittis leo. Ut convallis eu mi dignissim facilisis. Donec egestas vitae sapien quis bibendum. Sed rhoncus aliquet felis, ac cursus dui varius sit amet. Etiam eu nisi ligula. Sed sagittis massa a metus pulvinar, eu vestibulum nulla molestie. Nullam luctus sit amet felis quis ullamcorper. ",
+    descr1:"My name is Sandeep Budha. I am a Nepal-based application developer and designer who creates beautiful Apps.",
+    descr2:"I make websites using HTML, CSS, and JavaScript, and I utilize Flutter to create stunning, responsive apps for desktop, mobile, and the web. I am an expert user of design programs like Adobe XD and Photoshop. I've also used Arduino to work on an IOT project.",
+    descr3:"I'm open to freelance opportunities. Email me and we can talk if you want to talk to me about working with you."
   },
   skills: [
     {

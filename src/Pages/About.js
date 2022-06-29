@@ -6,9 +6,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
 
-function About({ title, name, social: { github, facebook, twitter, email }, about:{who, description} }) {
+function About({ title, name, intro, social: { github, facebook, twitter, email }, about:{ descr1, descr2,descr3} }) {
   return (
-    <div className="max-w-4xl mx-auto mt-16">
+    <div className="max-w-5xl mx-auto mt-10">
     <div className="w-full">
       <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
         <div className="">
@@ -19,10 +19,11 @@ function About({ title, name, social: { github, facebook, twitter, email }, abou
           />
         </div>
         <div className="text-center mt-5">
-          <p className="text-xl sm:text-2xl font-semibold text-gray-900">
+          <p className="text-sm font-bold text-purple-900">{intro}</p>
+          <p className="text-xl sm:text-2xl font-semibold text-blue-500">
             {name}
           </p>
-          <p className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2">
+          <p className="text-xs sm:text-base text-red-500 pt-2 pb-4 px-5 w-auto inline-block border-b-2">
             {title}
           </p>
           <div className="flex align-center justify-center mt-4">
@@ -58,9 +59,14 @@ function About({ title, name, social: { github, facebook, twitter, email }, abou
         </div>
       </div>
     </div>
-    <p className="text-2xl md:text-4xl font-bold text-center">{who}</p>
-      <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4">
-        {description}
+      <p className="text-lg text-left md:text-center text-gray-600 leading-relaxed mt-4 font-serif">
+        {descr1}
+      </p>
+      <p className="text-lg text-left md:text-center text-gray-600 leading-relaxed mt-4 font-serif">
+        {descr2}
+      </p>
+      <p className="text-lg text-left md:text-center text-gray-600 leading-relaxed mt-4 font-serif">
+        {descr3}
       </p>
     </div>
   );
