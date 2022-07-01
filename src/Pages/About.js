@@ -10,9 +10,13 @@ import bgv from '../Assest/i.mp4';
 
 function About({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email }, about:{ descr1, descr2,descr3} }) {
   return (
-    <section className="bg-gray-100">
-    <video src={bgv} autoPlay loop muted playsInline className="w-full h-full" bg-blend-overlay/>
-    <div className="max-w-7xl mx-auto mt-10 px-3 overlay">
+    
+      <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+    <video src={bgv} autoPlay loop muted className="min-w-full min-h-full " absolute />
+    </div>
+    <div class="video-content space-y-2">
+    <div className="max-w-7xl mx-auto px-3 overlay">
     <div className="w-full">
       <div className="flex flex-col justify-center max-w-sm mx-auto bg-white shadow-xl rounded-xl p-5">
         <div className="">
@@ -83,6 +87,7 @@ function About({ title, name, intro, social: { youtube, github, medium, facebook
       <p className="text-lg text-left md:text-center text-gray-600 leading-relaxed mt-4 font-serif font-bold">
         {descr3}
       </p>
+    </div>
     </div>
     </section>
   );
