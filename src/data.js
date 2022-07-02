@@ -16,6 +16,7 @@ const data = {
   },
   about: {
     descr1:"My name is Sandeep Budha. I am a Nepal-based application developer and designer who creates beautiful Apps. I make websites using HTML, CSS, and JavaScript, and I utilize Flutter to create stunning, responsive apps for desktop, mobile, and the web. I am a user of design programs like Adobe XD and Photoshop. I've also used Arduino to work on minor projects for an IOT project.",
+    descr2:"KEEP MOVING FORWARD",
     descr3:"I'm open to freelance opportunities. Email me and we can talk if you want to talk to me about working with you."
   },
   skills: [

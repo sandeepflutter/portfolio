@@ -6,11 +6,10 @@ import { FaTwitter } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import {FaMedium}from 'react-icons/fa';
 import {FaYoutube}from 'react-icons/fa';
-
 import heroVid from '../Assest/i.mp4';
 
 
-const About = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email }, about:{ descr1, descr2,descr3} }) => {
+const Home = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email }, about:{ descr2} }) => {
   return (
     <div className='w-full h-[90vh] top-[90px]'>
       <video
@@ -21,9 +20,9 @@ const About = ({ title, name, intro, social: { youtube, github, medium, facebook
         muted
       />
 
-      <div className="max-w-7xl mx-auto px-3 overlay pt-5">
+      <div className="max-w-7xl mx-auto px-3 overlay pt-16">
     <div className="w-full ">
-      <div className="flex flex-col justify-center max-w-sm mx-auto bg-white shadow-xl rounded-xl p-5">
+      <div className="flex flex-col justify-center max-w-sm mx-auto bg-white shadow-xl rounded-xl p-5 bg-opacity-5 backdrop-blur-sm">
         <div className="">
           <img
             className="w-32 mx-auto shadow-xl rounded-full"
@@ -32,7 +31,7 @@ const About = ({ title, name, intro, social: { youtube, github, medium, facebook
           />
         </div>
         <div className="text-center mt-5">
-          <p className="text-sm font-bold">{intro}</p>
+          <p className="text-sm font-bold text-white">{intro}</p>
           <p className="font-titillium text-2xl sm:text-3xl font-semibold text-blue-500">
             {name}
           </p>
@@ -48,14 +47,14 @@ const About = ({ title, name, intro, social: { youtube, github, medium, facebook
               <span class="sr-only">Youtube</span>
             </a>
             <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-400 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
               href={github} target="_blank"
             >
               <FaGithub />
               <span class="sr-only">Github</span>
             </a>
             <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-neutral-900 hover:bg-neutral-900 rounded-full hover:text-white transition-colors duration-300"
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-neutral-400 hover:bg-neutral-900 rounded-full hover:text-white transition-colors duration-300"
               href={medium} target="_blank"
             >
               <FaMedium />
@@ -86,15 +85,12 @@ const About = ({ title, name, intro, social: { youtube, github, medium, facebook
         </div>
       </div>
     </div>
-      <p className="font-lora text-lg text-left md:text-center text-white leading-relaxed mt-5 font-bold">
-        {descr1}
-      </p>
-      <p className="text-lg text-left md:text-center text-white leading-relaxed mt-4 font-serif font-bold">
-        {descr3}
+      <p className="font-lora text-4xl text-left md:text-center text-white leading-relaxed mt-5 font-bold">
+        {descr2}
       </p>
     </div>
     </div>
   );
 };
 
-export default About;
+export default Home;

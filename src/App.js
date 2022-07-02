@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Nav from "./components/Navbar/Nav";
-import About from "./Pages/About";
 import data from "./data";
+import Home from "./Pages/Home";
 
 function App() {
   useEffect(() => {
@@ -15,8 +15,7 @@ function App() {
   return (
     <div>
         <Nav /*name={data.name} title={data.title} social={data.social}*/ />
-        <About name={data.name} title={data.title} social={data.social} about={data.about} intro={data.intro}/>
-          
+      <Home name={data.name} title={data.title} social={data.social} about={data.about} intro={data.intro}/>
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
