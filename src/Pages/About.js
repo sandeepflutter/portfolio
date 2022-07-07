@@ -1,99 +1,49 @@
 import React from 'react';
-import profile from "../Assest/i.jpg";
-import { FaGithub } from "react-icons/fa";
-import { ImFacebook2 } from "react-icons/im";
-import { FaTwitter } from "react-icons/fa";
-import { FaRegEnvelope } from "react-icons/fa";
-import {FaMedium}from 'react-icons/fa';
-import {FaYoutube}from 'react-icons/fa';
-
-import heroVid from '../Assest/i.mp4';
+import profile from "../Assest/ii.png";
+import fb from "../Assest/san.jpg";
 
 
-const About = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email }, about:{ descr1, descr2,descr3} }) => {
+
+const About = ({about:{ descr1, descr4,descr3} }) => {
   return (
-    <div className='w-full h-[90vh] top-[90px]'>
-      <video
-        className='object-cover h-full w-full absolute -z-10'
-        src={heroVid}
-        autoPlay
-        loop
-        muted
-      />
 
-      <div className="max-w-7xl mx-auto px-3 overlay pt-5">
-    <div className="w-full ">
-      <div className="flex flex-col justify-center max-w-sm mx-auto bg-white shadow-xl rounded-xl p-5">
-        <div className="">
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src={fb}/>
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600"> 
           <img
-            className="w-32 mx-auto shadow-xl rounded-full"
+            className="shadow-xl rounded-full"
             src={profile}
             alt="Profile face"
           />
-        </div>
-        <div className="text-center mt-5">
-          <p className="text-sm font-bold">{intro}</p>
-          <p className="font-titillium text-2xl sm:text-3xl font-semibold text-blue-500">
-            {name}
-          </p>
-          <p className="font-titillium text-xl sm:text-2xl text-red-500 pt-2 pb-4 px-5 w-auto inline-block border-b-2 font-Titillium Web">
-            {title}
-          </p>
-          <div className="flex align-center justify-center mt-1">
-          <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
-              href={youtube} target="_blank"
-            >
-              <FaYoutube />
-              <span class="sr-only">Youtube</span>
-            </a>
-            <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
-              href={github} target="_blank"
-            >
-              <FaGithub />
-              <span class="sr-only">Github</span>
-            </a>
-            <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-neutral-900 hover:bg-neutral-900 rounded-full hover:text-white transition-colors duration-300"
-              href={medium} target="_blank"
-            >
-              <FaMedium />
-              <span class="sr-only">Medium</span>
-            </a>
-            <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-600 hover:bg-blue-600 rounded-full hover:text-white transition-colors duration-300"
-              href={facebook} target="_blank"
-            >
-              <ImFacebook2 />
-              <span class="sr-only">Facebook</span>
-            </a>
-            <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
-              href={twitter} target="_blank"
-            >
-              <FaTwitter />
-              <span class="sr-only">Twitter</span>
-            </a>
-            <a
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-teal-500 rounded-full hover:text-white transition-colors duration-300"
-              href={"https://mail.google.com/mail/?view=cm&fs=1&to=" + email} target="_blank"
-            >
-              <FaRegEnvelope />
-              <span class="sr-only">Email</span>
-            </a>
           </div>
+
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-white text-lg">Sandeep Budha</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <div class="new-line text-base text-gray-400">{descr4}</div>
+          </div>
+        </div>
+  
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4 text-justify">{descr1}</p>
+          <p class="leading-relaxed text-lg mb-4 text-justify">{descr3}</p>
+          <a class="text-indigo-400 inline-flex items-center">CV
+           
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-      <p className="font-lora text-lg text-left md:text-center text-white leading-relaxed mt-5 font-bold">
-        {descr1}
-      </p>
-      <p className="text-lg text-left md:text-center text-white leading-relaxed mt-4 font-serif font-bold">
-        {descr3}
-      </p>
-    </div>
-    </div>
+  </div>
+</section>
   );
 };
 

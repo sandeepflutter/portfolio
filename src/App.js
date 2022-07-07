@@ -4,6 +4,9 @@ import 'aos/dist/aos.css';
 import Nav from "./components/Navbar/Nav";
 import data from "./data";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Skills from "./Pages/Skills";
+import Serices from "./Pages/Services";
 
 function App() {
   useEffect(() => {
@@ -16,11 +19,16 @@ function App() {
     <div>
         <Nav /*name={data.name} title={data.title} social={data.social}*/ />
       <Home name={data.name} title={data.title} social={data.social} about={data.about} intro={data.intro}/>
+      <About className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8" about={data.about}/>
+      <Skills Skills={data.skills} />
+      <Serices/>
+      
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
         </div>
       </header>
+      
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* <!-- Replace with your content --> */}
