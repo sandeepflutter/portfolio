@@ -1,7 +1,3 @@
-import React from "react";
-import { FaPalette, FaReact, FaCode } from "react-icons/fa";
-
-const BOOTSTRAP_FOR_SKILL_ICON = "text-4xl mx-auto inline-block";
 const data = {
   intro:"Hello, I’m",
   name: "Sandeep Budha",
@@ -20,20 +16,6 @@ const data = {
     descr3:"I'm open to freelance opportunities. Email me and we can talk if you want to talk to me about working with you.",
     descr4:"B.E in Computer Science Engineering \n Former IT Officer at\n Bhairabi Rural Municipality",
   },
-  skills: [
-    {
-      skillName: "Frontend",
-      skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
-    },
-    {
-      skillName: "Design/UX",
-      skillIcon: <FaPalette className={BOOTSTRAP_FOR_SKILL_ICON} />,
-    },
-    {
-      skillName: "ReactJS",
-      skillIcon: <FaReact className={BOOTSTRAP_FOR_SKILL_ICON} />,
-    },
-  ],
 };
 
 export default data;

@@ -21,7 +21,7 @@ function App() {
       <Home name={data.name} title={data.title} social={data.social} about={data.about} intro={data.intro}/>
       <About className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8" about={data.about}/>
       <Skills Skills={data.skills} />
-      <Serices/>
+    
       
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
