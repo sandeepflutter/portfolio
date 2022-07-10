@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import { FaTwitter } from "react-icons/fa";
+import f from "../Assest/f.png";
+import r from "../Assest/r.png";
+import t from "../Assest/t.png";
+import p from "../Assest/p.png";
+import m from "../Assest/m.png";
+import photo from "../Assest/photo.png";
+import il from "../Assest/il.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -13,53 +19,50 @@ export default function Skills() {
         id: 1,
         title: 'Flutter',
         date: '5h ago',
+        col: f
       },
       {
         id: 2,
         title: "React js",
         date: '2h ago',
+        col:r
       },
       {
         id: 3,
         title: "Tailwind CSS",
         date: '2h ago',
+        col:t
       },
       {
         id: 4,
-        title: "SQL( PostgreSQL and MySQL)",
+        title: "PostgreSQL",
         date: '2h ago',
+        col:p
       },
       {
         id: 5,
-        title: "SQL( PostgreSQL and MySQL)",
+        title: "MySQL",
         date: '2h ago',
+        col:m
       },
     ],
     Designer: [
       {
         id: 1,
-        title: 'Is tech making coffee better or worse?',
+        title: 'Photoshop',
         date: 'Jan 7',
+        col:photo
       },
       {
         id: 2,
-        title: 'The most innovative things happening in coffee',
+        title: 'illustrator',
         date: 'Mar 19',
-      },
-    ],
-    Tutor: [
-      {
-        id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        date: '2d ago',
-      },
-      {
-        id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        date: '4d ago',
+        col:il
       },
     ],
   })
+
+  
 
   return (
     <div className="mx-auto bg-gray-900">
@@ -102,6 +105,9 @@ export default function Skills() {
       
       <ul>
         {posts.map((post) => (
+
+        
+          
           <li
             key={post.id}
             className="relative rounded-md p-3 hover:bg-gray-100"
@@ -109,9 +115,9 @@ export default function Skills() {
 
              <ul role="list" class="p-2 divide-y divide-slate-200">
               <li class="flex py-4 first:pt-0 last:pb-0">
-              <FaTwitter class="h-10 w-10"/>
+              <img className="h-10 w-10" src={post.col} alt="" />
               <div class="ml-3 overflow-hidden">
-              <h2 className="text-xl font-medium leading-5">
+              <h2 className="text-2xl font-medium leading-5">
               {post.title}
             </h2>
       </div>
