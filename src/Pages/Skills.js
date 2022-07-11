@@ -7,6 +7,9 @@ import p from "../Assest/p.png";
 import m from "../Assest/m.png";
 import photo from "../Assest/photo.png";
 import il from "../Assest/il.png";
+import g from "../Assest/g.png";
+import gg from "../Assest/gg.png";
+import ff from "../Assest/ff.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -14,7 +17,7 @@ function classNames(...classes) {
 
 export default function Skills() {
   let [categories] = useState({
-    Developer: [
+    Framework: [
       {
         id: 1,
         title: 'Flutter',
@@ -33,19 +36,46 @@ export default function Skills() {
         date: '2h ago',
         col:t
       },
+    
+    ],
+
+    Database: [
       {
-        id: 4,
+        id: 1,
         title: "PostgreSQL",
         date: '2h ago',
         col:p
       },
       {
-        id: 5,
+        id: 2,
         title: "MySQL",
         date: '2h ago',
         col:m
       },
+      {
+        id: 3,
+        title: "Firebase",
+        date: '2h ago',
+        col:ff
+      },
+      
     ],
+
+    Tools: [
+      {
+        id: 1,
+        title: 'GitHub',
+        date: 'Jan 7',
+        col:g
+      },
+      {
+        id: 2,
+        title: 'Git',
+        date: 'Mar 19',
+        col:gg
+      },
+    ],
+
     Designer: [
       {
         id: 1,
@@ -60,19 +90,20 @@ export default function Skills() {
         col:il
       },
     ],
+  
   })
 
   
 
   return (
-    <div className="mx-auto bg-gray-900">
-      <div className="max-w-xl mx-auto">
+    <div className="bg-gray-900 h-screen">
+      <div className="max-w-3xl mx-auto">
         <div>
-        <section class="text-gray-400 bg-gray-900 body-font items-center justify-cente ">
-<div class="container px-5 py-15 mx-auto flex flex-col">
-    <p className='text-[8vh] text-center'>Skills</p>
-<div className="w-full px-2 py-16 sm:px-0 justify-center">
-<div className=" -m-2 justify-center">
+        <section class="text-white font-bold bg-gray-900 body-font items-center justify-center">
+<div class="px-5 py-11 flex flex-col">
+    <p className='text-[7vh] text-center subpixel-antialiased font-lora underline'>My selection for the project</p>
+<div className="w-full px-2 py-10 sm:px-0 justify-center">
+<div className="-m-2 justify-center">
 <Tab.Group>
 <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
   {Object.keys(categories).map((category) => (
@@ -113,11 +144,11 @@ export default function Skills() {
             className="relative rounded-md p-3 hover:bg-gray-100"
           >
 
-             <ul role="list" class="p-2 divide-y divide-slate-200">
+             <ul role="list" class="p-1 divide-y divide-slate-200">
               <li class="flex py-4 first:pt-0 last:pb-0">
-              <img className="h-10 w-10" src={post.col} alt="" />
+              <img className="h-9 w-9" src={post.col} alt="" />
               <div class="ml-3 overflow-hidden">
-              <h2 className="text-2xl font-medium leading-5">
+              <h2 className="text-2xl font-medium leading-5 text-black hover:font-bold hover:text-gray-700">
               {post.title}
             </h2>
       </div>
