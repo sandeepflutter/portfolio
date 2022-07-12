@@ -7,6 +7,9 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Serices from "./Pages/Services";
+import Projects from "./Pages/Projects";
+import Footer from "./components/Footer/footer";
+import Contact from "./Pages/Contact";
 
 function App() {
   useEffect(() => {
@@ -21,6 +24,7 @@ function App() {
       <Home name={data.name} title={data.title} social={data.social} about={data.about} intro={data.intro}/>
       <About className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8" about={data.about}/>
       <Skills Skills={data.skills} />
+      <Projects/>
     
       
       <header className="bg-white shadow">
@@ -38,6 +42,8 @@ function App() {
           {/* <!-- /End replace --> */}
         </div>
       </main>
+      <Contact/>
+      <Footer className="bg-white shadow"/>
     </div>
   );
 }
