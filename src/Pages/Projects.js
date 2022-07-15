@@ -1,78 +1,90 @@
-import { useState } from 'react'
-import { Tab } from '@headlessui/react'
+import wt from "../Assest/wt.jpg";
+import ag from "../Assest/ag.jpg";
+import sam from "../Assest/sam.jpg";
+import bg from "../Assest/bg.jpg";
+import port from "../Assest/port.jpg";
 
-
-
-  
-const Projects = () => {
+const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
   return (
 
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      <h1 class="title-font mb-4 text-white text-[7vh] text-center subpixel-antialiased font-lora underline">My Projects</h1>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={wot} target="_blank">
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={wt}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Mobile App</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">World Tour</h1>
+            <p class="leading-relaxed">World Tour is a tourist guide mobile application which gives details about different countries and it's tourist destination.</p>
           </div>
         </div>
+        </a>
+      </div>
+      
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={bol} target="_blank">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={bg}/>
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Mobile App</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">BolChitra</h1>
+            <p class="leading-relaxed">The Bolchitra application allows users to share stories from across the world and convey ideas using photos, frequently in combination with text or other visual data.</p>
+          </div>
+        </div>
+        </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={som} target="_blank">
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={sam}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Mobile App</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Samrajya</h1>
+            <p class="leading-relaxed">Samrajya is an online shopping application that is dedicated to serving its users by delivering the essential products right to their front doors.</p>
           </div>
         </div>
+        </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={aog} target="_blank">
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={ag}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">The 400 Blows</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Mobile App</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">ArabGhar</h1>
+            <p class="leading-relaxed">ArabGhar provide information about room available for rent and Information about Qatar.</p>
           </div>
         </div>
+        </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={wotd} target="_blank">
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={wt}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Neptune</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Desktop App</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">World Tour</h1>
+            <p class="leading-relaxed">World Tour is a tourist guide Desktop application which gives details about countries and it's tourist destination.</p>
           </div>
         </div>
+        </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <a href={pot} target="_blank">
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={port}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Holden Caulfield</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Website</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Portfolio</h1>
+            <p class="leading-relaxed">Using the Javascript and CSS framework, React JS, and Tailwind CSS, a portfolio website was created.</p>
           </div>
         </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366"/>
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Alper Kamu</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
