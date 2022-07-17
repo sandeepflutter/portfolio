@@ -27,7 +27,7 @@ function App() {
       <Projects app={data.app}/>
       <Serices/>
       <Contact/>
-      <Footer className="bg-white shadow"/>
+      <Footer social={data.social} className="bg-white shadow"/>
     </div>
   );
 }

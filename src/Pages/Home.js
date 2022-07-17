@@ -1,16 +1,17 @@
 import React from 'react';
 import profile from "../Assest/i.jpg";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
 import { FaTwitter } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import {FaMedium}from 'react-icons/fa';
 import {FaYoutube}from 'react-icons/fa';
 import {BsChevronDown} from 'react-icons/bs';
+import {FaInstagram}from 'react-icons/fa';
 import heroVid from '../Assest/i.mp4';
 
 
-const Home = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email }, about:{ descr2} }) => {
+const Home = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email, linkedin, insta }, about:{ descr2} }) => {
   return (
     <div className='w-full h-[90vh] top-[90px] '>
       <video
@@ -24,7 +25,7 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
 
     <div className="max-w-7xl mx-auto px-3 overlay pt-12">
     <div className="w-full">
-      <div className="h-[55vh] border-2 flex flex-col justify-center max-w-sm mx-auto bg-white shadow-xl rounded-xl p-5 bg-opacity-5 backdrop-blur-sm">
+      <div className="h-[55vh] border-2 flex flex-col justify-center max-w-md mx-auto bg-white shadow-xl rounded-xl p-5 bg-opacity-5 backdrop-blur-sm">
         <div className="">
           <img
             className=" w-[18vh] mx-auto shadow-xl rounded-full"
@@ -37,7 +38,7 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
           <p className="font-titillium text-[5vh] font-semibold text-blue-500">
             {name}
           </p>
-          <p className="font-titillium text-[3vh] text-red-500 pt-1 pb-2 px-[8vh] w-auto inline-block border-b-2 font-Titillium Web">
+          <p className="font-titillium text-[3vh] text-red-500 pt-1 pb-2 px-[14vh] w-auto inline-block border-b-2 font-Titillium Web">
             {title}
           </p>
           <div className="flex align-center justify-center mt-1">
@@ -74,6 +75,22 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
               href={twitter} target="_blank"
             >
               <FaTwitter class="animate-pulse"/>
+              <span class="sr-only">Twitter</span>
+            </a>
+           
+            <a
+              className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
+              href={linkedin} target="_blank"
+            >
+              <FaLinkedin class="animate-pulse"/>
+              <span class="sr-only">Twitter</span>
+            </a>
+
+            <a
+              className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-red-500 hover:bg-red-500 rounded-full hover:text-white transition-colors duration-300"
+              href={insta} target="_blank"
+            >
+              <FaInstagram class="animate-pulse"/>
               <span class="sr-only">Twitter</span>
             </a>
             <a

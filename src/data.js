@@ -8,6 +8,8 @@ const data = {
     medium:"https://medium.com/@sandeepbudha.sb",
     facebook: "https://www.facebook.com/profile.php?id=100011911954302",
     twitter: "https://twitter.com/sbSandeepbudha",
+    insta:"https://www.instagram.com/official_sandeepbudha/",
+    linkedin:"https://www.linkedin.com/in/sandeep-budha-3638b88a/",
     email: "sandeepbudha.sb@gmail.com",
   },
 
