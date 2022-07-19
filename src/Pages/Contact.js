@@ -3,11 +3,6 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-  const [values, setValues] = useState({
-    name: '',
-    user_email: '',
-    message: ''
-  });
   const [status, setStatus] = useState('');
 
   const form = useRef();
@@ -18,15 +13,12 @@ const Contact = () => {
     emailjs.sendForm('service_nzbjazq', 'template_wdxwsig', form.current, 'Boqra7eM78tZK_ywK')
       .then((result) => {
           console.log(result.text);
-          setValues({
-            name: '',
-            user_email: '',
-            message: ''
-          });
         setStatus('success');
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset();
+    
   };
 
   useEffect(() => {
@@ -37,18 +29,7 @@ const Contact = () => {
     }
   }, [status])
 
-  this.state={
-    title:''
-  }
-  
-  sendthru=()=>{
-    document.getElementByid('inputname').value = '';
-    this.setState({
-      name: '',
-      user_email: '',
-      message: ''
-  })
-  }
+
 
   return (
 <form ref={form} onSubmit={sendEmail}>
@@ -63,13 +44,13 @@ const Contact = () => {
         <div class="p-2 w-1/2">
           <div class="relative">
             <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
-            <input defaultValue="Reset" type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" spellcheck="false" data-ms-editor="true"/>
+            <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" spellcheck="false" data-ms-editor="true"/>
           </div>
         </div>
         <div class="p-2 w-1/2">
           <div class="relative">
             <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-            <input defaultValue="Reset" type="email" id="email" name="user_email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="email" id="email" name="user_email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
         <div class="p-2 w-full">
@@ -79,7 +60,7 @@ const Contact = () => {
           </div>
         </div>
         <div class="p-2 w-full">
-          <button  onClick={this.sendthru} type='submit' value="send" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+          <button type='submit' value="send" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
           <a class="text-indigo-400">sandeepbudha.sb@gmail.com</a>
