@@ -29,8 +29,6 @@ const Contact = () => {
     }
   }, [status])
 
-
-
   return (
 <form ref={form} onSubmit={sendEmail}>
 <section class="text-gray-400 bg-gray-900 body-font relative">

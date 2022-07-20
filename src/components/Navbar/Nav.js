@@ -1,6 +1,7 @@
 import { Transition } from "@headlessui/react";
 import 'aos/dist/aos.css'; 
 import React,{useState} from "react";
+import {MdDeveloperMode} from 'react-icons/md';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,7 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                />
+                <MdDeveloperMode class="w-10 h-10 text-red-500"/>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
