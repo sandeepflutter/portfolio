@@ -8,10 +8,10 @@ import {BiDesktop} from 'react-icons/bi'
 const Services = () => {
   return (
 
-<section class="text-gray-400 body-font bg-gray-900">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1 class="title-font mb-4 text-white text-[7vh] text-center subpixel-antialiased font-lora underline">My Services</h1>
+<section id="service" class="text-gray-400 body-font bg-gray-900">
+  <div class="container px-5 py-16 mx-auto">
+    <div class="flex flex-wrap w-full mb-5 flex-col items-center text-center">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">My Services</h1>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="xl:w-1/3 md:w-1/2 p-4">

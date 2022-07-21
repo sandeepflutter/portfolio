@@ -2,6 +2,7 @@ import { Transition } from "@headlessui/react";
 import 'aos/dist/aos.css'; 
 import React,{useState} from "react";
 import {MdDeveloperMode} from 'react-icons/md';
+import {Link} from 'react-scroll';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,44 +13,51 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
+                <Link href="#" to="home" spy={true} smooth={true} duration={500} offset={-100}>
                 <MdDeveloperMode class="w-10 h-10 text-red-500"/>
+                </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#"
+                  <Link to="about" spy={true} smooth={true} offset={-10} duration={600} 
+                  onClick={()=>setIsOpen(false)}
+                  href="#"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About Me
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link to="skill" spy={true} smooth={true} offset={-100} duration={600} 
+                  onClick={()=>setIsOpen(false)}
+                  href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Skills
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link to="project" spy={true} smooth={true} offset={-100} duration={600}
+                  onClick={()=>setIsOpen(false)}
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Projects
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link to="service" spy={true} smooth={true} offset={-20} duration={600}
+                  onClick={()=>setIsOpen(false)}
+                  href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     My services
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link to="contact" spy={true} smooth={true} offset={-100} duration={600}
+                  onClick={()=>setIsOpen(false)}
+                  href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -112,40 +120,45 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
+                <Link to="about" spy={true} smooth={true} offset={-250} duration={600} 
+                  onClick={()=>setIsOpen(false)}
                   href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About Me
-                </a>
+                </Link>
 
-                <a
+                <Link to="skill" spy={true} smooth={true} offset={-280} duration={600} 
+                  onClick={()=>setIsOpen(false)}
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                    Skills
-                </a>
+                </Link>
 
-                <a
+                <Link to="project" spy={true} smooth={true} offset={-320} duration={600} 
+                  onClick={()=>setIsOpen(false)}
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Projects
-                </a>
+                </Link>
 
-                <a
+                <Link to="service" spy={true} smooth={true} offset={-250} duration={600} 
+                  onClick={()=>setIsOpen(false)}
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   My services
-                </a>
+                </Link>
 
-                <a
+                <Link to="contact" spy={true} smooth={true} offset={-300} duration={600} 
+                  onClick={()=>setIsOpen(false)}
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           )}

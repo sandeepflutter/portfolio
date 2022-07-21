@@ -7,10 +7,10 @@ import port from "../Assest/port.jpg";
 const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
   return (
 
-<section class="text-gray-400 bg-gray-900 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="title-font mb-4 text-white text-[7vh] text-center subpixel-antialiased font-lora underline">My Projects</h1>
+<section id="project" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-5">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">My Projects</h1>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/3 sm:w-1/2 p-4">

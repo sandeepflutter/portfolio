@@ -30,7 +30,7 @@ const Contact = () => {
   }, [status])
 
   return (
-<form ref={form} onSubmit={sendEmail}>
+<form id="contact" ref={form} onSubmit={sendEmail}>
 <section class="text-gray-400 bg-gray-900 body-font relative">
   <div class="container px-5 py-5 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">

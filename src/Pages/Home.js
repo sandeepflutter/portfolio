@@ -8,12 +8,13 @@ import {FaMedium}from 'react-icons/fa';
 import {FaYoutube}from 'react-icons/fa';
 import {BsChevronDown} from 'react-icons/bs';
 import {FaInstagram}from 'react-icons/fa';
+import { Link } from 'react-scroll';
 import heroVid from '../Assest/i.mp4';
 
 
 const Home = ({ title, name, intro, social: { youtube, github, medium, facebook, twitter, email, linkedin, insta }, about:{ descr2} }) => {
   return (
-    <div className='w-full h-[90vh] top-[90px] '>
+    <div id="home" className='w-full h-[90vh] top-[90px] '>
       <video
         className='object-cover h-full w-full absolute -z-10'
         src={heroVid}
@@ -108,12 +109,12 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
         {descr2} 
         <div>
         <div className="flex align-center justify-center mt-1">
-          <a
-              className="text-[5vh] m-1 p-1 sm:m-2 sm:p-2 text-white transition-colors duration-300"
-              href={youtube} target="_blank"
+          <Link to="about" spy={true} smooth={true} offset={-10} duration={600} 
+                
+                  href="#"
             >
               <BsChevronDown class="animate-bounce w-10 h-10 items-center"/>
-            </a>
+            </Link>
             </div>
         </div>
       </p>

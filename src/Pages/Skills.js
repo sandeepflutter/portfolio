@@ -96,12 +96,12 @@ export default function Skills() {
   
 
   return (
-    <div className="bg-gray-900 h-screen">
+    <div id="skill" className="bg-gray-900 h-screen">
       <div className="max-w-3xl mx-auto">
         <div>
         <section class="text-white font-bold bg-gray-900 body-font items-center justify-center">
 <div class="px-5 py-11 flex flex-col">
-    <p className='text-[7vh] text-center subpixel-antialiased font-lora underline'>My selection for the project</p>
+    <p className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center'>My selection for the project</p>
 <div className="w-full px-2 py-10 sm:px-0 justify-center">
 <div className="-m-2 justify-center">
 <Tab.Group>
