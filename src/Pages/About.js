@@ -8,6 +8,7 @@ const About = ({about:{ descr1, descr4,descr3} }) => {
   return (
 
 <section id="about" class="text-gray-400 bg-gray-900 body-font">
+
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="lg:w-4/6 mx-auto">
       <div class="rounded-lg h-64 overflow-hidden">
