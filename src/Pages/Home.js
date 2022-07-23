@@ -45,35 +45,55 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
           <div className="flex align-center justify-center mt-1">
           <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={youtube} target="_blank" rel="noreferrer"
+=======
               href={youtube} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaYoutube class="animate-pulse" />
               <span class="sr-only">Youtube</span>
             </a>
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-gray-400 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={github} target="_blank" rel="noreferrer"
+=======
               href={github} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaGithub class="animate-pulse"/>
               <span class="sr-only">Github</span>
             </a>
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-neutral-400 hover:bg-neutral-900 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={medium} target="_blank" rel="noreferrer"
+=======
               href={medium} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaMedium class="animate-pulse"/>
               <span class="sr-only">Medium</span>
             </a>
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-blue-600 hover:bg-blue-600 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={facebook} target="_blank" rel="noreferrer"
+=======
               href={facebook} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <ImFacebook2 class="animate-pulse"/>
               <span class="sr-only">Facebook</span>
             </a>
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={twitter} target="_blank" rel="noreferrer"
+=======
               href={twitter} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaTwitter class="animate-pulse"/>
               <span class="sr-only">Twitter</span>
@@ -81,7 +101,11 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
            
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={linkedin} target="_blank" rel="noreferrer"
+=======
               href={linkedin} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaLinkedin class="animate-pulse"/>
               <span class="sr-only">Twitter</span>
@@ -89,14 +113,22 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
 
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-red-500 hover:bg-red-500 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={insta} target="_blank" rel="noreferrer"
+=======
               href={insta} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaInstagram class="animate-pulse"/>
               <span class="sr-only">Twitter</span>
             </a>
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-teal-500 rounded-full hover:text-white transition-colors duration-300"
+<<<<<<< HEAD
+              href={"https://mail.google.com/mail/?view=cm&fs=1&to=" + email} target="_blank" rel="noreferrer"
+=======
               href={"https://mail.google.com/mail/?view=cm&fs=1&to=" + email} target="_blank"
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             >
               <FaRegEnvelope class="animate-pulse"/>
               <span class="sr-only">Email</span>

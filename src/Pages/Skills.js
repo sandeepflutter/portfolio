@@ -144,6 +144,16 @@ export default function Skills() {
             className="relative rounded-md p-3 hover:bg-gray-100"
           >
 
+<<<<<<< HEAD
+             <ul class="p-1 divide-y divide-slate-200">
+              <li class="flex py-4 first:pt-0 last:pb-0">
+              <img className="h-9 w-9" src={post.col} alt="" />
+              <div class="ml-3 overflow-hidden">
+                <button>
+              <h2 className="text-2xl font-medium leading-5 text-black hover:font-bold hover:text-gray-700">
+              {post.title}
+            </h2></button>
+=======
              <ul role="list" class="p-1 divide-y divide-slate-200">
               <li class="flex py-4 first:pt-0 last:pb-0">
               <img className="h-9 w-9" src={post.col} alt="" />
@@ -151,6 +161,7 @@ export default function Skills() {
               <h2 className="text-2xl font-medium leading-5 text-black hover:font-bold hover:text-gray-700">
               {post.title}
             </h2>
+>>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
       </div>
     </li>
 </ul>
