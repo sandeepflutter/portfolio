@@ -62,11 +62,7 @@ const Contact = () => {
           <button type='submit' value="send" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-<<<<<<< HEAD
           <a href={"https://mail.google.com/mail/?view=cm&fs=1&to=sandeepbudha.sb@gmail.com"} target="_blank" rel="noreferrer" class="text-indigo-400">sandeepbudha.sb@gmail.com</a>
-=======
-          <a class="text-indigo-400">sandeepbudha.sb@gmail.com</a>
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
           <p class="leading-normal">Kathmandu, Nepal</p>
         </div>
       </div>
