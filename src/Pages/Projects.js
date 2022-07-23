@@ -14,11 +14,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={wot} target="_blank" rel="noreferrer">
-=======
-      <a href={wot} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={wt}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
@@ -31,11 +27,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
       </div>
       
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={bol} target="_blank" rel="noreferrer">
-=======
-      <a href={bol} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={bg}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
@@ -47,11 +39,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
         </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={som} target="_blank" rel="noreferrer">
-=======
-      <a href={som} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={sam}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
@@ -63,11 +51,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
         </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={aog} target="_blank" rel="noreferrer">
-=======
-      <a href={aog} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={ag}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
@@ -79,11 +63,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
         </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={wotd} target="_blank" rel="noreferrer">
-=======
-      <a href={wotd} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={wt}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
@@ -95,11 +75,7 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
         </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-<<<<<<< HEAD
       <a href={pot} target="_blank" rel="noreferrer">
-=======
-      <a href={pot} target="_blank">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={port}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">

@@ -17,65 +17,37 @@ const Footer = ({social: { youtube, github, medium, facebook, twitter, linkedin,
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a className="text-gray-400 hover:text-blue-600 transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={facebook} target="_blank" rel="noreferrer" >
-=======
-              href={facebook} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <ImFacebook className='h-4 w-4 '/>
             </a>
 
             <a className="text-gray-400 hover:text-blue-500 transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={twitter} target="_blank" rel="noreferrer">
-=======
-              href={twitter} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaTwitter className='h-4 w-4 '/>
             </a>
         
         <a className="text-gray-400 hover:text-red-600 transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={youtube} target="_blank" rel="noreferrer">
-=======
-              href={youtube} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaYoutube className='h-4 w-4 '/>
             </a>
 
             <a className="text-gray-400 hover:text-white transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={github} target="_blank" rel="noreferrer">
-=======
-              href={github} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaGithub className='h-4 w-4 '/>
             </a>
 
             <a className="text-gray-400 hover:text-white transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={medium} target="_blank" rel="noreferrer">
-=======
-              href={medium} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaMedium className='h-4 w-4 '/>
             </a>
 
             <a className="text-gray-400 hover:text-red-500 transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={insta} target="_blank" rel="noreferrer">
-=======
-              href={insta} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaInstagram className='h-4 w-4 '/>
             </a>
 
             <a className="text-gray-400 hover:text-blue-500 transition-colors duration-300 pr-2"
-<<<<<<< HEAD
               href={linkedin} target="_blank" rel="noreferrer">
-=======
-              href={linkedin} target="_blank" >
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
               <FaLinkedin className='h-4 w-4 '/>
             </a>
 

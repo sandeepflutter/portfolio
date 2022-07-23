@@ -1,10 +1,7 @@
 import React from 'react';
 import profile from "../Assest/ii.png";
 import fb from "../Assest/san.jpg";
-<<<<<<< HEAD
 import cv from "../Assest/cv.pdf";
-=======
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
 
 
 
@@ -38,11 +35,7 @@ const About = ({about:{ descr1, descr4,descr3} }) => {
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
           <p class="leading-relaxed text-lg mb-4 text-justify">{descr1}</p>
           <p class="leading-relaxed text-lg mb-4 text-justify pb-5">{descr3}</p>
-<<<<<<< HEAD
           <a href={cv} target="_blank" rel="noreferrer" class="relative px-6 py-3 font-bold text-black group">
-=======
-          <a href="#_" class="relative px-6 py-3 font-bold text-black group">
->>>>>>> c12e4950d4401cd58ba00dcae1a763406bd014e0
             <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2  bg-indigo-500 group-hover:translate-x-0 group-hover:translate-y-0"></span>
             <span class="absolute inset-0 w-full h-full border-4 border-white"></span>
             <span class="relative">RESUME</span>
