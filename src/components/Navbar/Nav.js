@@ -1,5 +1,4 @@
 import { Transition } from "@headlessui/react";
-import 'aos/dist/aos.css'; 
 import React,{useState} from "react";
 import {MdDeveloperMode} from 'react-icons/md';
 import {Link} from 'react-scroll';

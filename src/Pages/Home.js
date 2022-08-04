@@ -16,7 +16,7 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
   return (
     <div id="home" className='w-full h-[90vh] top-[90px] '>
       <video
-        className='object-cover h-full w-full absolute -z-10'
+        className='object-cover h-full w-full absolute -z-10 bg-gray-800'
         src={heroVid}
         autoPlay
         loop
@@ -35,7 +35,7 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
           />
         </div>
         <div className="text-center mt-5">
-          <p className="text-[3.5vh] font-bold text-white">{intro}</p>
+          <p className="text-[3vh] font-bold text-white">{intro}</p>
           <p className="font-titillium text-[5vh] font-semibold text-blue-500">
             {name}
           </p>
@@ -44,7 +44,7 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
           </p>
           <div className="flex align-center justify-center mt-1">
           <a
-              className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
+              className="text-[2vh] m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
               href={youtube} target="_blank" rel="noreferrer"
             >
               <FaYoutube class="animate-pulse" />

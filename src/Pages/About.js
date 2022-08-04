@@ -3,8 +3,6 @@ import profile from "../Assest/ii.png";
 import fb from "../Assest/san.jpg";
 import cv from "../Assest/cv.pdf";
 
-
-
 const About = ({about:{ descr1, descr4,descr3} }) => {
   return (
 

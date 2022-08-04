@@ -4,7 +4,7 @@ import sam from "../Assest/sam.jpg";
 import bg from "../Assest/bg.jpg";
 import port from "../Assest/port.jpg";
 
-const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
+const Projects = ({app: { bol, wot, aog,som,web,wotd},}) => {
   return (
 
 <section id="project" class="text-gray-400 bg-gray-900 body-font">
@@ -75,13 +75,13 @@ const Projects = ({app: { bol, wot, aog,som,pot,wotd},}) => {
         </a>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4">
-      <a href={pot} target="_blank" rel="noreferrer">
+      <a href={web} target="_blank" rel="noreferrer">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={port}/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 duration-500">
             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Website</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Portfolio</h1>
-            <p class="leading-relaxed">Using the Javascript and CSS framework, React JS, and Tailwind CSS, a portfolio website was created.</p>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Ashraya Engineering</h1>
+            <p class="leading-relaxed">Using the Javascript and CSS framework, React JS, and Tailwind CSS, a Ashraya Engineering website was created.</p>
           </div>
         </div>
         </a>

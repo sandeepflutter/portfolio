@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import React, { useState } from "react";
 import Nav from "./components/Navbar/Nav";
 import data from "./data";
 import Home from "./Pages/Home";
@@ -30,11 +28,6 @@ function App() {
 
   window.addEventListener('scroll', toggleVisible);
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  });
 
   return (
     <div>
@@ -51,9 +44,6 @@ function App() {
       <Serices/>
       <Contact/>
       <Footer social={data.social} className="bg-white shadow"/>
-
-     
-
     </div>
   );
 }
