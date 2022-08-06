@@ -18,7 +18,7 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link to="about" spy={true} smooth={true} offset={-10} duration={600} 
+                  <Link to="about" spy={true} smooth={true} offset={-60} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -26,34 +26,34 @@ function Nav() {
                     About Me
                   </Link>
 
-                  <Link to="skill" spy={true} smooth={true} offset={-100} duration={600} 
+                  <Link to="skill" spy={true} smooth={true} offset={-60} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Skills
                   </Link>
 
-                  <Link to="project" spy={true} smooth={true} offset={-100} duration={600}
+                  <Link to="project" spy={true} smooth={true} offset={-60} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Projects
                   </Link>
 
-                  <Link to="service" spy={true} smooth={true} offset={-20} duration={600}
+                  <Link to="service" spy={true} smooth={true} offset={-40} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     My services
                   </Link>
 
-                  <Link to="contact" spy={true} smooth={true} offset={-100} duration={600}
+                  <Link to="contact" spy={true} smooth={true} offset={-40} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
                   </Link>
@@ -119,7 +119,7 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="about" spy={true} smooth={true} offset={-250} duration={600} 
+                <Link to="about" spy={true} smooth={true} offset={-250} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -127,34 +127,34 @@ function Nav() {
                   About Me
                 </Link>
 
-                <Link to="skill" spy={true} smooth={true} offset={-280} duration={600} 
+                <Link to="skill" spy={true} smooth={true} offset={-280} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                    Skills
                 </Link>
 
-                <Link to="project" spy={true} smooth={true} offset={-320} duration={600} 
+                <Link to="project" spy={true} smooth={true} offset={-320} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Projects
                 </Link>
 
-                <Link to="service" spy={true} smooth={true} offset={-250} duration={600} 
+                <Link to="service" spy={true} smooth={true} offset={-250} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   My services
                 </Link>
 
-                <Link to="contact" spy={true} smooth={true} offset={-300} duration={600} 
+                <Link to="contact" spy={true} smooth={true} offset={-300} duration={600} activeClass="bg-gray-700"
                   onClick={()=>setIsOpen(false)}
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
                 </Link>

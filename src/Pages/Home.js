@@ -43,13 +43,14 @@ const Home = ({ title, name, intro, social: { youtube, github, medium, facebook,
             {title}
           </p>
           <div className="flex align-center justify-center mt-1">
-          <a
-              className="text-[2vh] m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
+                      <a
+              className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300"
               href={youtube} target="_blank" rel="noreferrer"
             >
-              <FaYoutube class="animate-pulse" />
+              <FaYoutube class="animate-pulse"/>
               <span class="sr-only">Youtube</span>
             </a>
+
             <a
               className="text-[3.5vh] m-1 p-1 sm:m-2 sm:p-2 text-gray-400 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
               href={github} target="_blank" rel="noreferrer"

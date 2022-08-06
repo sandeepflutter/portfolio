@@ -4,8 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lora:"'Lora', serif",
-        titillium: "'Titillium Web', sans-serif",
+        hahmlet:["Hahmlet", "serif"],
+        titillium: ["Titillium Web", "sans-serif"],
+        lora: ["Lora", "serif"],
+        crimson: ["Crimson Text", "serif"],
       }
     },
   },

@@ -101,7 +101,7 @@ export default function Skills() {
         <div>
         <section class="text-white font-bold bg-gray-900 body-font items-center justify-center">
 <div class="px-5 py-11 flex flex-col">
-    <p className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center'>My selection for the project</p>
+    <p className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center font-lora'>My selection for the project</p>
 <div className="w-full px-2 py-10 sm:px-0 justify-center">
 <div className="-m-2 justify-center">
 <Tab.Group>
@@ -111,7 +111,7 @@ export default function Skills() {
       key={category}
       className={({ selected }) =>
         classNames(
-          'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+          'font-lora w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
           'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
           selected
             ? 'bg-white shadow'
@@ -149,7 +149,7 @@ export default function Skills() {
               <img className="h-9 w-9" src={post.col} alt="" />
               <div class="ml-3 overflow-hidden">
                 <button>
-              <h2 className="text-2xl font-medium leading-5 text-black hover:font-bold hover:text-gray-700">
+              <h2 className=" font-crimson text-2xl font-medium leading-5 text-black hover:font-bold hover:text-gray-700">
               {post.title}
             </h2></button>
       </div>
